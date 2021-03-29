@@ -34,7 +34,7 @@ Mace Windu
 
 **Link to Deployed Page:**
 https://defy1x.github.io/Star-Wars-Quiz/ -
-[GitHub](https://github.com/Defy1x/Star-Wars-Quiz/_)
+[GitHub](https://github.com/Defy1x/Star-Wars-Quiz/)
 
 
 **Link to Team Github Repository Page:**
