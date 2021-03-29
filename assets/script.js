@@ -182,9 +182,9 @@ function handleScore() {
         const API_URL ="https://swapi.dev/api/people/" + peopleIndex
         fetch(API_URL, {
             method: "GET",
-          //   headers: {
-          //   'Access-Control-Allow-Headers': '*/*',
-          // }
+            headers: {
+            'Origin': "*",
+          }
         })
         .then(response => response.json())
         .then(function(response){
