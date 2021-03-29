@@ -179,11 +179,12 @@ function handleScore() {
     console.log(peopleIndex);// added on Mar 16th
 
     function characterInfo() {// added on Mar 16th
-        const API_URL ="https://crossorigin.me/https://swapi.dev/api/people/" + peopleIndex
+        const API_URL ="https://swapi.dev/api/people/" + peopleIndex
         fetch(API_URL, {
             method: "GET",
             headers: {
             'Origin': "*",
+            // 'Access-Control-Allow-Headers': '*'
           }
         })
         .then(response => response.json())
