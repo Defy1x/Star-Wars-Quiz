@@ -186,7 +186,7 @@ function handleScore() {
           //   'Access-Control-Allow-Headers': '*/*',
           // }
         })
-        .then(responce => responce.json())
+        .then(response => response.json())
         .then(function(response){
             console.log(response.name);
             if (response.name === "Dooku") {
