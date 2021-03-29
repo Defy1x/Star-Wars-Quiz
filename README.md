@@ -33,8 +33,8 @@ Mace Windu
 ```
 
 **Link to Deployed Page:**
-https://ksboyer17.github.io/Star-Wars-Quiz/ -
-[GitHub](https://ksboyer17.github.io/Star-Wars-Quiz/ )
+https://defy1x.github.io/Star-Wars-Quiz/ -
+[GitHub](https://github.com/Defy1x/Star-Wars-Quiz/_)
 
 
 **Link to Team Github Repository Page:**

@@ -11,7 +11,6 @@ var beforeBtnOne = $("#beforeBtnOne")
 var beforeBtnTwo = $("#beforeBtnTwo")
 var responseName = ""
 
-console.log("this is linked")
 
 
 startBtn.click(function() {
@@ -180,7 +179,7 @@ function handleScore() {
     console.log(peopleIndex);// added on Mar 16th
 
     function characterInfo() {// added on Mar 16th
-        const API_URL ="http://swapi.dev/api/people/" + peopleIndex
+        const API_URL ="https://swapi.dev/api/people/" + peopleIndex
         fetch(API_URL, {
             method: "GET",
           //   headers: {
