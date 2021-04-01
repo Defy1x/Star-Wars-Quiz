@@ -187,9 +187,10 @@ function handleScore() {
         $.ajax({
           url: API_URL,
           method: "GET",
+          contentType: "application/json",
+          dataType: "json",
           headers: {
             'Origin': '*',
-            'Content-Type': 'application/json',
           }
         })
         // fetch(API_URL, {
