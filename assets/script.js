@@ -176,30 +176,30 @@ function handleScore() {
     console.log(userScore);
     console.log(peopleIndex);// added on Mar 16th
 
-    $.ajaxPrefilter(function(options) {
-        if (options.crossDomain && $.support.cors) {
-            options.url = 'https://cors-anywhere.herokuapp.com/' + options.url;
-        }
-    });
+    // $.ajaxPrefilter(function(options) {
+    //     if (options.crossDomain && $.support.cors) {
+    //         options.url = 'https://cors-anywhere.herokuapp.com/' + options.url;
+    //     }
+    // });
 
     function characterInfo() {// added on Mar 16th
         const API_URL ="https://swapi.dev/api/people/" + peopleIndex
-        $.ajax({
-          url: API_URL,
-          method: "GET",
-          contentType: "application/json",
-          dataType: "json",
-          headers: {
-            'Origin': '*',
-          }
-        })
-        // fetch(API_URL, {
-        //     method: "GET",
-        //     headers: {
-        //     'Origin': "*",
+        // $.ajax({
+        //   url: API_URL,
+        //   method: "GET",
+        //   contentType: "application/json",
+        //   dataType: "json",
+        //   headers: {
+        //     'Access-Control-Allow-Headers:': '*',
         //   }
         // })
-        // .then(response => response.json())
+        fetch(API_URL, {
+            method: "GET",
+          //   headers: {
+          //   'Access-Control-Allow-Headers:': "*",
+          // }
+        })
+        .then(response => response.json())
         .then(function(response){
             console.log(response.name);
             if (response.name === "Dooku") {
