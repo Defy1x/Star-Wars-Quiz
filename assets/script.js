@@ -11,8 +11,6 @@ var beforeBtnOne = $("#beforeBtnOne")
 var beforeBtnTwo = $("#beforeBtnTwo")
 var responseName = ""
 
-
-
 startBtn.click(function() {
     homePage.addClass("hide");
     questionContainer.removeClass("hide")
@@ -178,16 +176,28 @@ function handleScore() {
     console.log(userScore);
     console.log(peopleIndex);// added on Mar 16th
 
+    $.ajaxPrefilter(function(options) {
+        if (options.crossDomain && $.support.cors) {
+            options.url = 'https://cors-anywhere.herokuapp.com/' + options.url;
+        }
+    });
+
     function characterInfo() {// added on Mar 16th
         const API_URL ="https://swapi.dev/api/people/" + peopleIndex
-        fetch(API_URL, {
-            method: "GET",
-            headers: {
-            'Origin': "*",
-            // 'Access-Control-Allow-Headers': '*'
+        $.ajax({
+          url: API_URL,
+          method: "GET",
+          headers: {
+            'Origin': '*',
           }
         })
-        .then(response => response.json())
+        // fetch(API_URL, {
+        //     method: "GET",
+        //     headers: {
+        //     'Origin': "*",
+        //   }
+        // })
+        // .then(response => response.json())
         .then(function(response){
             console.log(response.name);
             if (response.name === "Dooku") {
