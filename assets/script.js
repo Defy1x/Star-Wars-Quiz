@@ -189,6 +189,7 @@ function handleScore() {
           method: "GET",
           headers: {
             'Origin': '*',
+            'Content-Type': 'application/json',
           }
         })
         // fetch(API_URL, {
