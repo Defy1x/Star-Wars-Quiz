@@ -226,7 +226,7 @@ function handleScore() {
             resulteName.append(characterRes);
             console.log("name added");
 
-            var git_key = "xtpfYZdjgPj82u3H7TZEODHTWlef6Udk";
+            var git_key = config.GIPHY_API_KEY;
             var gif_URL = "https://api.giphy.com/v1/gifs/search?api_key=" + git_key + "&q=" + responseName;
             console.log(gif_URL)
             fetch(gif_URL)
