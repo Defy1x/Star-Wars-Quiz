@@ -252,5 +252,5 @@ function handleScore() {
 
     };
 
-    characterInfo()// added on Mar 16t
+    characterInfo()
 }
